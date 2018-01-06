@@ -255,7 +255,7 @@
 	
   </section>
   
-    <div id="google-map" class="wow fadeIn" data-latitude="13.36592" data-longitude="78.5750161" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
+    <div id="map" class="wow fadeIn" data-latitude="13.36592" data-longitude="78.5750161" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
    
   <footer id="footer" style="background-color:#003566">
     <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -311,6 +311,15 @@
   <script type="text/javascript" src="js/jquery.countTo.js"></script>
   <script type="text/javascript" src="js/lightbox.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-
+<script>
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.12),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
 </body>
 </html>
